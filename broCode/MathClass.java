@@ -1,16 +1,21 @@
-import javax.swing.JOptionPane;
-
 public class MathClass {
     public static void main(String[] args) {
-        double num1 = 3.14;
-        double num2 = -10;
-
-        double numMax = Math.max(num1, num2);
-        double numMin = Math.min(num1, num2);
-
-        //output section
-        JOptionPane.showMessageDialog(null, "The big number is: " + numMax);
-        JOptionPane.showMessageDialog(null, "The small number is : " + numMin);
-        // System.out.println(z);
+        int result = Math.round(1.1258815F);
+        System.out.println(result);
+        // celling of given bumber
+        int resultOne = (int)Math.ceil(1.25F);
+        System.out.println(resultOne);
+        // maximum
+        int resultTwo = Math.max(result, resultOne);
+        System.out.println(resultTwo);
+        //generate a random number
+        double resultThree = Math.random();
+        System.out.println(resultThree);
+        // different number between zero to n
+        double resultFour = Math.random() * 100; //here n is 100
+        System.out.println(resultFour);
+        // int random number
+        int resultSix = (int) Math.round(Math.random()*100);
+        System.out.println(resultSix);
     }
 }

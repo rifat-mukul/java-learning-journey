@@ -1,24 +1,19 @@
-import java.util.Scanner;
-
-import javax.swing.JOptionPane;
-
 public class LogicalOperator {
     public static void main(String[] args) {
-        //   && --> and
-        //   || --> or
-        //   ! --> not
+        int temperature = 25;
+        boolean isWarm = temperature > 20 && temperature < 30; // && it is and opoerator
 
-        Scanner scanner = new Scanner(System.in);
+        boolean hasHighIncome = true;
+        boolean hasGoodCradit = true;
+        boolean isEligibleApply = hasHighIncome || hasGoodCradit; // || it is or operator
 
-        double temp = Double.parseDouble(JOptionPane.showInputDialog("Enter the temparature : "));
+        boolean hasCriminalRecord = false;
+        boolean iseligible = (hasGoodCradit || hasHighIncome) && !hasCriminalRecord;
 
-        if (temp < 15) {
-            JOptionPane.showMessageDialog(null, "today is cold");
-        } else if (temp >= 15 && temp <= 30) {
-            JOptionPane.showMessageDialog(null, "Today is normal");
-        } else {
-            JOptionPane.showMessageDialog(null, "Today is hot");
-        }
-        scanner.close();
+
+        System.out.println(isWarm);
+        System.out.println(isEligibleApply);
+        System.out.println(iseligible);
+
     }
 }
