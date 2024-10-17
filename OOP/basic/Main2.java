@@ -1,3 +1,4 @@
+package basic;
 public class Main2 {
     public static void main(String[] args) {
         A obj = new A("Tusu");

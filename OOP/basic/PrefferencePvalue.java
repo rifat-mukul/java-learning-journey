@@ -1,3 +1,4 @@
+package basic;
 public class PrefferencePvalue {
     public static void main(String[] args) {
         int a = 10;
