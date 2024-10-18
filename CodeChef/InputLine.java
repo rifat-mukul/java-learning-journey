@@ -1,8 +1,7 @@
 import java.util.Scanner;
 
-public class CodeChef {
-
-    public static void main(String[] args) {
+public class InputLine {
+        public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
         String numString = scanner.nextLine();
