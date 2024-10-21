@@ -5,19 +5,28 @@ public class CodeChef {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        String numString = scanner.nextLine();
+        int t = scanner.nextInt();
 
-        String[] numbeStrings = numString.split(" ");
+        for (int i = 0; i < t; i++) {
+            int n = scanner.nextInt();
 
-        int[] intNum = new int[numbeStrings.length];
-        for (int i = 0; i < intNum.length; i++) {
-            intNum[i] = Integer.parseInt(numbeStrings[i]);
-        }
-
-        for (int i = 0; i < intNum.length; i++) {
-            System.out.print(intNum[i]+ " ");
+            if (isEvenMultipleofSeven(n)) {
+                System.out.println("Alice");
+            } else if (isOddMultipleofNine(n)) {
+                System.out.println("Bob");
+            } else {
+                System.out.println("Charlie");
+            }
         }
 
         scanner.close();
+    }
+
+    private static boolean isEvenMultipleofSeven(int num) {
+        return num % 2 == 0 && num % 7 == 0;
+    }
+
+    private static boolean isOddMultipleofNine (int num) {
+        return num % 2 != 0 && num % 9 == 0;
     }
 }

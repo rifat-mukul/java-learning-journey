@@ -14,6 +14,7 @@ abstract class Animal {
 // Subclass Dog that extends Animal
 class Dog extends Animal {
     // Providing implementation for the abstract method
+    @Override
     void makeSound() {
         System.out.println("Bark");
     }
@@ -22,6 +23,7 @@ class Dog extends Animal {
 // Subclass Cat that extends Animal
 class Cat extends Animal {
     // Providing implementation for the abstract method
+    @Override
     void makeSound() {
         System.out.println("Meow");
     }

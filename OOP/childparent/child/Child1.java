@@ -7,4 +7,9 @@ public class Child1 extends Parent {
     public void childMethod1() {
         System.out.println("This is child method 1");
     }
+
+    public void sayhello() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'sayhello'");
+    }
 }
