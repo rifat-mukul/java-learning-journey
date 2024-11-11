@@ -1,7 +1,7 @@
 package strings;
 import java.util.*;
 
-class Strings {
+public class Strings {
     public static void main(String[] args) {
         Scanner scnner = new Scanner(System.in);
         String nameHalf = scnner.next();
